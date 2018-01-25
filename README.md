@@ -26,3 +26,15 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Do
+* Set up Friebase API
+* Authentication
+* User can create a library
+* User can save images to their library
+* User can delete images from their library
+* User can edit their images
+* User can toggle their libraries public/private
+
+
+## Done
