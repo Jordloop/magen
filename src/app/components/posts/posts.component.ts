@@ -7,12 +7,25 @@ import { PostsService } from '../../services/posts.service';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
+  posts: object[];
 
   constructor(
     private postsSvc: PostsService
   ) { }
 
   ngOnInit() {
+    this.getPosts();
+    if (this.posts)
+      console.log(this.posts);      
   }
 
+
+  getPosts() {
+    this.postsSvc.getPosts().subscribe(posts => {
+      if (posts) {
+        this.posts = posts;
+        console.log('oninit, posts', this.posts);
+      }
+    })
+  }
 }
