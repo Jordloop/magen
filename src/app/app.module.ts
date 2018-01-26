@@ -5,7 +5,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FirebaseApp } from 'angularfire2';
 import { firebaseConfig } from './firebaseConfig';
 import { AppComponent } from './app.component';
-import { PostsComponent } from './posts/posts.component';
+import { PostsComponent } from './components/posts/posts.component';
 
 @NgModule({
   declarations: [
