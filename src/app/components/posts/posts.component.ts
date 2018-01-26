@@ -17,6 +17,7 @@ export class PostsComponent implements OnInit {
     this.getPosts();
     if (this.posts)
       console.log(this.posts);      
+      
   }
 
 
@@ -27,5 +28,13 @@ export class PostsComponent implements OnInit {
         console.log('oninit, posts', this.posts);
       }
     })
+  }
+
+  savePost() {
+    const postToSave = {
+      name: 'testPost',
+      postContent: 'hello post!'
+    }
+    this.postsSvc.savePost(postToSave);
   }
 }
