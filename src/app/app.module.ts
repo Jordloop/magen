@@ -7,14 +7,18 @@ import { FirebaseApp } from 'angularfire2';
 import { firebaseConfig } from './firebaseConfig';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './components/posts/posts.component';
-import { PostsService } from './services/posts.service'; 
-
+import { PostsService } from './services/posts.service';
+import { UploadListComponent } from './uploads/upload-list/upload-list.component';
+import { UploadFormComponent } from './uploads/upload-form/upload-form.component';
+ 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    UploadListComponent,
+    UploadFormComponent,
   ],
   imports: [
     BrowserModule,
