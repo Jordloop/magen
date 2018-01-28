@@ -10,6 +10,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { PostsService } from './services/posts.service';
 import { UploadListComponent } from './uploads/upload-list/upload-list.component';
 import { UploadFormComponent } from './uploads/upload-form/upload-form.component';
+import { UploadService } from './uploads/shared/upload.service';
  
 
 
@@ -27,7 +28,8 @@ import { UploadFormComponent } from './uploads/upload-form/upload-form.component
   ],
   providers: [
     PostsService,
-    AngularFireDatabase
+    AngularFireDatabase,
+    UploadService
   ],
   bootstrap: [AppComponent]
 })
