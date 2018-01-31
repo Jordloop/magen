@@ -11,6 +11,7 @@ import { PostsService } from './services/posts.service';
 import { UploadListComponent } from './uploads/upload-list/upload-list.component';
 import { UploadFormComponent } from './uploads/upload-form/upload-form.component';
 import { UploadService } from './uploads/shared/upload.service';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
  
 
 
@@ -20,6 +21,7 @@ import { UploadService } from './uploads/shared/upload.service';
     PostsComponent,
     UploadListComponent,
     UploadFormComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
