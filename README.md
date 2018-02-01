@@ -28,13 +28,15 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Do
-* Authentication
-* Register Component
-* Login Component
 * Post Component
 * Post:user$key Component
 * comment:post$key Component
 * Routing error Component
+
+## Doing
+* Authentication
+* Register Component
+* Login Component
 
 
 ## Done
