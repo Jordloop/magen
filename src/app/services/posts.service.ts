@@ -11,7 +11,7 @@ export class PostsService {
   ) { }
 
   getPosts() {
-    return this.db.list('postsData/posts')
+    return this.db.list('uploads')
   }
 
   savePost(postData) {

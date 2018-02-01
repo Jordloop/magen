@@ -1,3 +1,6 @@
-<p>
+<p> 
   posts works!
 </p>
+<div *ngFor="let post of posts">
+  <img src="{{post.url}}" alt="{{post.name}}">
+</div>
