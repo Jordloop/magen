@@ -1,12 +1,13 @@
-import { AuthService } from './shared/security/auth.service';
-import { routing } from './app.routing';
+import { AngularFireAuth } from 'angularfire2/auth';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { AuthService } from './shared/security/auth.service';
+import { routing } from './app.routing';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database-deprecated';
 import { FirebaseApp } from 'angularfire2';
 import { firebaseConfig } from './firebaseConfig';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PostsService } from './services/posts.service';
@@ -33,14 +34,15 @@ import { RegisterComponent } from './register/register.component';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule,
+    ReactiveFormsModule,
     routing
   ],
   providers: [
     PostsService,
-    AngularFireDatabase,
     UploadService,
-    AuthService
+    AuthService,
+    AngularFireAuth
+
   ],
   bootstrap: [AppComponent]
 })
