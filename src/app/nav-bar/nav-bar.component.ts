@@ -1,4 +1,6 @@
+import { AuthService } from './../shared/security/auth.service';
 import { Component, OnInit } from '@angular/core';
+import {AuthInfo} from "../shared/security/auth-info";
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  authInfo: AuthInfo;
+
+  constructor(private authSvc: AuthService) { }
 
   ngOnInit() {
+    this.authSvc.authInfo$.subscribe(authInfo => this.authInfo = authInfo);
   }
 
 }
