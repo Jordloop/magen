@@ -1,3 +1,4 @@
+import { AuthService } from './shared/security/auth.service';
 import { routing } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -38,7 +39,8 @@ import { RegisterComponent } from './register/register.component';
   providers: [
     PostsService,
     AngularFireDatabase,
-    UploadService
+    UploadService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
