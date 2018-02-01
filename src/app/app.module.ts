@@ -14,6 +14,8 @@ import { UploadFormComponent } from './uploads/upload-form/upload-form.component
 import { UploadService } from './uploads/shared/upload.service';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
  
 
 
@@ -24,6 +26,8 @@ import { RouterModule } from '@angular/router';
     UploadListComponent,
     UploadFormComponent,
     NavBarComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
