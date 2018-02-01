@@ -1,3 +1,4 @@
+import { routing } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from 'angularfire2';
@@ -12,6 +13,7 @@ import { UploadListComponent } from './uploads/upload-list/upload-list.component
 import { UploadFormComponent } from './uploads/upload-form/upload-form.component';
 import { UploadService } from './uploads/shared/upload.service';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { RouterModule } from '@angular/router';
  
 
 
@@ -26,7 +28,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    routing
   ],
   providers: [
     PostsService,
