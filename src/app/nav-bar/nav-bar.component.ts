@@ -17,4 +17,9 @@ export class NavBarComponent implements OnInit {
     this.authSvc.authInfo$.subscribe(authInfo => this.authInfo = authInfo);
   }
 
+
+  logout() {
+    this.authSvc.logout();
+  }
+
 }
