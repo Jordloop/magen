@@ -1,3 +1,4 @@
+import { AuthGuard } from './shared/security/auth.guard';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AppComponent } from './app.component';
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
     },
     {
         path: 'upload',
-        component: UploadFormComponent
+        component: UploadFormComponent,
+        canActivate: [AuthGuard]
     },
     {
         path: 'login',

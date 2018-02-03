@@ -1,3 +1,4 @@
+import { AuthGuard } from './shared/security/auth.guard';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -41,7 +42,8 @@ import { RegisterComponent } from './register/register.component';
     PostsService,
     UploadService,
     AuthService,
-    AngularFireAuth
+    AngularFireAuth,
+    AuthGuard
 
   ],
   bootstrap: [AppComponent]
