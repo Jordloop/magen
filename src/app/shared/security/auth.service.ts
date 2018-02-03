@@ -10,16 +10,12 @@ import * as firebase from 'firebase/app';
 export class AuthService {
 
   static UNKNOWN_USER = new AuthInfo(null);
-
   authInfo$: BehaviorSubject<AuthInfo> = new BehaviorSubject<AuthInfo>(AuthService.UNKNOWN_USER);
 
 
   constructor(private afAuth: AngularFireAuth, private router:Router) {
 
   }
-
-
-
 
     login(email, password):Observable<AuthInfo> {
         return this.fromFirebaseAuthPromise(this.afAuth.auth.signInWithEmailAndPassword(email, password));
@@ -61,7 +57,7 @@ export class AuthService {
     logout() {
         this.afAuth.auth.signOut();
         this.authInfo$.next(AuthService.UNKNOWN_USER);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/']);
 
     }
 
