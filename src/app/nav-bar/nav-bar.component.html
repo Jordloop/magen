@@ -9,6 +9,11 @@
     <div class="icons">
       <ul>
         <li>
+          <a routerLink="/upload"
+            routerLinkActive="menu-active"
+            *ngIf="authInfo.isLoggedIn()">Upload</a>
+        </li>
+        <li>
           <a routerLink="login"
             routerLinkActive="menu-active"
             *ngIf="!authInfo.isLoggedIn()">Login</a>
