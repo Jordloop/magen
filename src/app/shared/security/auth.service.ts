@@ -57,7 +57,7 @@ export class AuthService {
     logout() {
         this.afAuth.auth.signOut();
         this.authInfo$.next(AuthService.UNKNOWN_USER);
-        this.router.navigate(['/']);
+        this.router.navigate(['/register']);
 
     }
 

@@ -1,3 +1,4 @@
+import { AngularFireDatabase } from 'angularfire2/database-deprecated';
 import { AuthGuard } from './shared/security/auth.guard';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { BrowserModule } from '@angular/platform-browser';
@@ -43,7 +44,8 @@ import { RegisterComponent } from './register/register.component';
     UploadService,
     AuthService,
     AngularFireAuth,
-    AuthGuard
+    AuthGuard,
+    AngularFireDatabase
 
   ],
   bootstrap: [AppComponent]
