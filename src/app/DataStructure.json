@@ -1,0 +1,45 @@
+{
+    "commentData": {
+        "comments": {
+            "commentKey$": {
+                "authorKey": "2987fn034pkljsad09",
+                "postKey": "lk32j498pajedrlij",
+                "text": "This is the text!"
+            },
+            "commentsPerPost": {
+                "postKey$": {
+                    "commentKey$1": true,
+                    "commentKey$2": true,
+                    "commentKey$3": true
+                }
+            }
+        }    
+    },
+
+    
+    "postData": {
+        "posts": {
+            "autherKey": "2987fn034pkljsad09",
+            "imgUrl": "www.imageurl.com/imageurl",
+            "postKey" : "lk32j498pajedrlij",
+            "likesCount": 14,
+            "text": "This text is about my image!"
+        },
+        "postsPerUser": {
+            "userKey$": {
+                "postKey$1": true,
+                "postKey$2": true,
+                "postKey$3": true
+            }
+        }
+    },
+    
+    
+    "userData": {
+        "userKey$": {
+            "alias": "Moogle"
+        }    
+    }
+    
+
+}
