@@ -20,6 +20,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { UserService } from './services/user.service';
  
 
 
@@ -42,6 +43,7 @@ import { RegisterComponent } from './register/register.component';
   providers: [
     PostsService,
     UploadService,
+    UserService,
     AuthService,
     AngularFireAuth,
     AuthGuard,
