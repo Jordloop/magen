@@ -12,6 +12,7 @@ import { firebaseConfig } from './firebaseConfig';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { PostFormComponent } from './components/post-form/post-form.component';
 import { PostsService } from './services/posts.service';
 import { UploadListComponent } from './uploads/upload-list/upload-list.component';
 import { UploadFormComponent } from './uploads/upload-form/upload-form.component';
@@ -33,6 +34,7 @@ import { UserService } from './services/user.service';
     NavBarComponent,
     LoginComponent,
     RegisterComponent,
+    PostFormComponent
   ],
   imports: [
     BrowserModule,

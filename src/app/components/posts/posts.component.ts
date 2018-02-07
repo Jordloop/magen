@@ -14,15 +14,15 @@ export class PostsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getPosts();
+    this.getAllPosts();
     if (this.posts)
       console.log(this.posts);      
       
   }
 
 
-  getPosts() {
-    this.postsSvc.getPosts().subscribe(posts => {
+  getAllPosts() {
+    this.postsSvc.getAllPosts().subscribe(posts => {
       if (posts) {
         this.posts = posts;
         console.log('oninit, posts', this.posts);
